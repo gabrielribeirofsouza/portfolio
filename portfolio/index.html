@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel R</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* 'Michroma' */
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* Poppins */
+        </style> 
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Michroma&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /*Exo 2*/
+            </style>
+    <link rel="stylesheet" href="src/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+</head>
+<body>
+  <div id="container">
+
+    <div>
+        <header>
+         <h1 id="logo-header">Gabriel R</h1>
+         <img src="src/imagens/icons/icons8-cardápio-50 (1).png" alt="" id="menu-mobile">
+         <nav id="nav">
+            <ul id="menu-header" >
+                <li><a href="#home">Home</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <ul id="mobile-list" class="hide">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+    </div>
+
+    <main>
+        <div id="apresent">
+            <p class="p-apresent-main"><span id="p-apresent-main">Olá, me chamo</span></p>
+            <h2>Gabriel Ribeiro</h2>
+            <span class="texto-destaq-roxo" id="dev-text">Desenvolvedor Front-End</span>
+            <p id="p-apresent">Transformo ideias em interfaces intuitivas, unindo design e funcionalidade para criar experiências digitais que cativam e engajam.</p>
+
+            <div id="icons">
+                <button class="btn-download"><a href="">DOWNLOAD CV</a></button>
+
+                <a href="https://github.com/gabrielribeirofsouza" target="_blank"><i class='bx bxl-github icon-git' style='color:#ffffff' id="git-icon"></i></a>
+
+                <a href="https://www.linkedin.com/in/gabriel-ribeiro-b65455303/" target="_blank"><i class='bx bxl-linkedin icon-linkedin' style='color:#ffffff' id="linkedin-icon"></i></a>
+                
+            </div>
+          
+        </div>
+
+
+        <aside>
+            <img src="src/imagens/portfolio img.png" alt="" width="400px">
+        </aside>
+    </main>
+
+    <section id="especialidades" >
+        <h2>MINHAS <span class="texto-destaq-roxo">ESPECIALIDADES</span></h2>
+
+        <div id="website">
+            <img src="src/imagens/icons/website logo.png" alt="" width="300px">
+            <span>Website</span>
+            <p class="texto-destaq-roxo">Tenho habilidade em criar sites responsivos e intuitivos, com experiência em mobile first para garantir a melhor experiência do usuário em qualquer dispositivo.</p>
+        </div>
+
+        <div id="solucionar-problemas">
+            <img src="src/imagens/icons/cerebro-logo.png" alt="" width="300px">
+            <span>Solucionar problemas</span>
+            <p class="texto-destaq-roxo">
+                Tenho habilidade em solucionar problemas de forma ágil e eficiente, sempre analisando causas e implementando melhorias práticas.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos"  >
+        <h2 class="texto-destaq-roxo">PROJETOS</h2>
+        <div><a href="#"><img src="#" alt="Projeto1"></a></div>
+        <div><a href="#"><img src="#" alt="Projeto2"></a></div>
+        <div><a href="#"><img src="#" alt="Projeto3"></a></div>
+    </section>
+
+    <section id="contato">
+        <h2>FALA <span class="texto-destaq-roxo">COMIGO</span></h2>
+        <form>
+            
+            <input type="text" placeholder="Seu nome:" class="input-form" id="nome">
+
+            <input type="text" placeholder="Seu e-mail" class="input-form" id="e-mail">
+
+            <input type="text" placeholder="Seu celular:" class="input-form" id="celular">
+            
+            <textarea name="" id="" placeholder="Sua mensagem" ></textarea>
+            <button id="btn-form" type="submit">Enviar</button>
+        </form>
+    </section>
+  </div>
+
+<script>
+    const btnMobile = document.querySelector('#menu-mobile');
+    
+    btnMobile.addEventListener('click', ()=>{
+        const listaMob = document.querySelector('#mobile-list');
+        listaMob.classList.toggle('active');
+     
+
+        
+    })
+</script>
+</body>
+</html>

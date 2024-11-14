@@ -1,0 +1,764 @@
+:root{
+    --cor-fundo: #0A0F1D;
+    --cor-neon-roxo: #BB86FC; /*titulos e icones em destaque */
+    --cor-verde-ciano: #00FFB3; /* Efeitos e destaque*/
+    --cor-cinza-metalico: #A8AAB3;/*textos menores*/
+    --cor-rosa-neon: #FF007A; /* Efeitos e destaque*/
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: var(--cor-fundo);
+}
+/* CLASSES GERAIS */
+.texto-destaq-roxo{
+    color: #BB86FC;
+  
+   
+}
+.hide{
+    display: none;
+}
+.active{
+    display: block;
+}
+
+
+/* breakpoints */
+
+/*DEFAULT*/
+
+/*cabeçalho*/
+
+header{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1{
+    font-size: 1.5rem;
+    padding: 10px;
+    font-family: 'Michroma';
+    background: linear-gradient(to right, white, #BB86FC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+#menu-mobile{
+    padding-right: 15px;
+    width: 50px;
+    transition: .6s;
+    
+}
+nav{
+    display: none;
+}
+nav ul{
+    visibility: hidden;
+}
+#nav.active ul{
+visibility: visible;
+}
+nav li{
+    font-family: 'Poppins';
+    display: block;
+
+   
+   
+}
+nav li a{
+    color: white;
+    padding: 1.5rem 0.5rem;
+  
+    
+
+}
+#mobile-list{
+    
+    justify-content: space-around;
+    margin-top: 10px;
+    background-color: #a8aab31a;
+    
+}
+#mobile-list li{
+   display: inline;
+   margin-left: 20px;
+    
+}
+#mobile-list a{
+    color: white;
+    font-family: 'Poppins';
+}
+
+/*MAIN / ASIDE*/
+
+aside{
+    width: 100%;
+}
+aside img{
+    padding: 10px;
+    
+}
+main{
+display: grid;
+padding: 10px;
+grid-template-rows: 100vw;
+width: 100%;
+height: 100vh;
+}
+#apresent{
+    grid-row: 2;
+    justify-self: center;
+}
+#p-apresent-main{
+    align-self: center;
+    background-color: #00BBFF;
+    font-family: 'Michroma';
+    font-weight: bold;
+}
+
+.p-apresent-main{
+    padding-top: 10px;
+}
+
+#apresent h2{
+    font-family: 'Michroma';
+    color: white;
+    margin-bottom: 4px;
+  
+}
+#dev-text{
+    font-family: 'Exo 2';
+    font-size: 1.3rem;
+}
+#p-apresent{
+    font-family: 'Poppins';
+    color: white;
+  font-size: 1rem;
+ padding-top: 5px;
+  max-width: 400px;
+  margin-bottom: 12px;
+
+}
+#icons{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ .btn-download{
+   padding: 8px;
+    font-size: 1.2rem;
+    background: var(--cor-verde-ciano);
+    border-radius: 10px;
+    border: none;
+
+}
+.btn-download a{
+    color: black;
+}
+
+
+#git-icon, #linkedin-icon{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    font-size: 2rem;
+}
+
+/*especiliades*/
+#especialidades{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+}
+#especialidades h2{
+    text-align: center;
+    color: white;
+    font-family: 'Poppins'
+}
+#website{
+    justify-items: flex-start;
+    width: 100%;
+}
+#website img, #solucionar-problemas img{
+    display: none;
+}
+#website span, #solucionar-problemas span{
+    display: block;
+   padding: 10px;
+    color: white;
+    font-family: 'Michroma';
+
+}
+#website p, #solucionar-problemas p{
+   
+   text-align: left;
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    padding: 7px;
+    
+}
+/*projetos */
+
+#projetos{
+    height: 95vh;
+    padding: 10px;
+    display: grid;
+    grid-auto-rows: 100px;
+    font-family: 'Poppins';
+    text-align: center;
+    row-gap: 40px;
+
+    
+}
+#projetos div{
+   
+  display: block;
+
+background-color: rgba(245, 222, 179, 0.493);
+}
+/* contato */
+#contato{
+ display: grid;
+    height: 80vh;
+    grid-auto-rows: auto;
+    margin-top: 5%;
+   width: 100%;
+
+}
+#contato h2{
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+    grid-row: 1;
+    align-self: flex-start;
+}
+#contato form{
+  margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.input-form{
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    margin: 30px auto;
+    background: none;
+    width: 75%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    
+}
+textarea{
+    width: 75%;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    background: none;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+#btn-form{
+    display: block;
+    margin: 40px auto;
+    width: 115px;
+    padding: 5px;
+    font-size: 24px;
+    background-color: #00FFB3;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins';
+}
+
+
+
+/*TABLET MODO RETRATO*/
+
+@media(min-width: 768px){
+    /* CABEÇALHO */
+    header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #menu-mobile{
+        display: none;
+    }
+    #mobile-list{
+        display: none;
+    }
+    #logo-header{
+        padding: 8px;
+        font-size: 28px;
+    }
+   
+    nav{
+     display: block;}
+
+    #menu-header{
+         display: flex;
+         visibility: visible;
+         gap: 40px;
+     }
+     #menu-header li{
+        font-family: 'Poppins';
+     }
+     #menu-header li a{
+         color: white;
+     }
+ #menu-header li:nth-child(4){
+        margin-right: 50px;
+    
+    }
+
+    /*apresent*/
+
+    main{
+     
+        padding: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+   aside{
+    flex: 1;
+   }
+
+   main aside img{
+    display: block;
+    margin: 0 auto;
+
+   }
+
+   #apresent{
+   flex: 2;
+   margin-top: 50px;
+   padding-left: 15px;
+   }
+
+   #p-apresent-main{
+    background-color: #00BBFF;
+    font-family: 'Michroma';
+    font-size: 28px;
+    display: inline-block;
+    
+    font-weight: bold;
+    }
+
+    #apresent h2{
+        font-family: 'Michroma';
+        font-size: 40px;
+        color: white;
+    }
+
+    #dev-text{
+        font-size: 28px;
+        font-family: 'Exo 2';
+        display: block;
+        padding: 10px 0px;   
+    }
+    #p-apresent{
+        font-family: 'Poppins';
+        font-size: 24px;
+        margin-top: 10px;
+        max-width: 600px;
+        color: white;
+    }
+    #icons{
+    margin-top: 40px;
+
+    display: inline-flex;
+    gap: 10px;
+}
+.btn-download{
+  
+    width: 250px;
+    
+    background: var(--cor-verde-ciano);
+    border-radius: 10px;
+    border: none;
+    
+    
+}
+.btn-download a{
+    color: black;
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+.btn-download:hover{
+    cursor: pointer;
+}
+#git-icon, #linkedin-icon{
+    font-size: 60px;
+    padding: 8px;
+    margin-left: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    
+}
+
+
+/* ESPECIALIDADES */
+#especialidades{
+    margin-top: 100px;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+#especialidades h2{
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 45px;
+    color: white;
+}
+
+
+#website , #solucionar-problemas{
+   max-width: 600px;
+   margin-left: 5%;
+    
+}
+
+#website span, #solucionar-problemas span{
+    display: block;
+    font-family: 'Michroma';
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#website p, #solucionar-problemas p{
+    max-width: 600px;
+    font-size: 24px;
+    font-family: 'Poppins';
+    padding: 15px 0px;
+    margin-left: 2%;
+    
+}
+
+/*PROJETOS*/
+#projetos{
+    height: auto;
+  
+    
+}
+#projetos h2{
+    font-size: 45px;
+}
+
+#contato{
+    height: 80vh;
+    margin-top: 30%;
+}
+
+#contato h2{
+    font-size: 45px;
+}
+
+
+}
+
+/* TABLET MODO PAISAGEM + */
+
+@media(min-width: 1024px){
+    
+    
+    /* CABEÇALHO */
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+    #logo-header{
+        font-family: 'Michroma';
+        margin-left: 20px;
+        font-size: 32px;
+        padding: 10px;
+        background: linear-gradient(to right, white, #BB86FC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    #menu-header li{
+        display: inline-flex;
+        gap: 40px;
+        padding: 10px;
+        
+    }
+    #menu-header li:nth-child(4){
+        margin-right: 60px;
+}
+#menu-header li a:hover{
+    color: #00FFB3;
+    transition: 0.5s;
+}
+#menu-header a{
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: white;
+}
+/*MAIN*/
+main{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100vh;
+    width: 100%;
+}
+#apresent{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: flex-start;
+    justify-self: center;
+    
+    margin-right: 25%;
+}
+#p-apresent-main{
+    background-color: #00BBFF;
+    font-family: 'Michroma';
+    font-size: 28px;
+    display: inline-block;
+    
+    font-weight: bold;
+}
+#apresent h2{
+    font-family: 'Michroma';
+    font-size: 48px;
+    color: white;
+}
+#dev-text{
+    font-size: 28px;
+    font-family: 'Exo 2';
+    display: block;
+    padding: 10px;
+    
+    
+}
+#p-apresent{
+    font-family: 'Poppins';
+    font-size: 24px;
+    margin-top: 40px;
+    max-width: 600px;
+    color: white;
+}
+
+#icons{
+    margin-top: 40px;
+}
+#btn-download{
+    padding: 10px;
+    font-size: 20px;
+    background: var(--cor-verde-ciano);
+    border-radius: 10px;
+    border: none;
+    
+    
+}
+#btn-download a{
+    color: black;
+}
+#btn-download:hover{
+    cursor: pointer;
+}
+#git-icon, #linkedin-icon{
+    font-size: 60px;
+    padding: 8px;
+    margin-left: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    
+}
+
+
+
+aside{
+    grid-column: 2 / 3;
+    grid-row: 1;
+    align-self: flex-start;
+    justify-self: end;
+    margin-right: 20%;
+    
+    
+    
+    
+}
+
+/*ESPECIALIDADES*/
+
+#especialidades{
+    
+    padding-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+#especialidades h2{
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 64px;
+    color: white;
+}
+#website{
+    grid-column: 1;
+    align-self: flex-start;
+    justify-self: center;
+    padding: 0px 20px;
+}
+#website img{
+    position: relative;
+    display: inline-block;
+    right: 100px;
+    top: 30px;
+    
+    
+    
+}
+#website span, #solucionar-problemas span{
+    display: block;
+    font-family: 'Michroma';
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#website p, #solucionar-problemas p{
+    max-width: 600px;
+    font-size: 24px;
+    font-family: 'Poppins';
+    padding: 15px 0px;
+    
+}
+#solucionar-problemas{
+    grid-column: 2;
+    align-self: flex-start;
+    justify-content: center;
+    margin-left: 10%;
+    padding: 0px 20px;
+    
+}
+#solucionar-problemas img{
+    position: relative;
+    display: inline-block;
+    right: 100px;
+    top: 50px;
+}
+/* PROJETOS */
+#projetos{
+    margin-top: 50px;
+    
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 14px;
+    font-family: 'Poppins';
+    
+}
+#projetos h2{
+    grid-column: 1/-1;
+    font-size: 64px;
+    text-align: center;
+}
+#projetos div{
+    display: flex;
+    align-content: start;
+    align-items: center;
+    height: 60vh;
+    justify-content: space-around;
+    background-color: #00FFB3;
+    
+}
+#projetos div:hover{
+    rotate: -1deg;
+    background-color: #A8AAB3;
+    transition: 0.5s;
+}
+/* CONTATO */
+#contato{
+    width: 100%;
+    
+    margin: 15% auto;
+}
+form{
+    max-width: 600px;
+    width: 100%;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.027);
+    border-radius: 5px;
+    padding: 10px;
+    
+    
+}
+#contato h2{
+    color: white;
+    text-align: center;
+    font-size: 64px;
+    margin-top: 100px;
+    font-family: 'Poppins';
+}
+
+
+.input-form{
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    margin: 20px auto;
+    background: none;
+    width: 75%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    
+}
+textarea{
+    width: 75%;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    background: none;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+#btn-form{
+    display: block;
+   margin-top: 30px;
+    width: 115px;
+    padding: 5px;
+    font-size: 24px;
+    background-color: #00FFB3;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins';
+}
+}
