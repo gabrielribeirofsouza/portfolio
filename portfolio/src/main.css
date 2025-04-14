@@ -205,25 +205,7 @@ height: 100vh;
     padding: 7px;
     
 }
-/*projetos */
 
-#projetos{
-    height: 95vh;
-    padding: 10px;
-    display: grid;
-    grid-auto-rows: 100px;
-    font-family: 'Poppins';
-    text-align: center;
-    row-gap: 40px;
-
-    
-}
-#projetos div{
-   
-  display: block;
-
-background-color: rgba(245, 222, 179, 0.493);
-}
 /* contato */
 #contato{
  display: grid;
@@ -668,12 +650,10 @@ aside{
 }
 /* PROJETOS */
 #projetos{
-    margin-top: 50px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 80vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
     gap: 14px;
     font-family: 'Poppins';
     
@@ -683,20 +663,60 @@ aside{
     font-size: 64px;
     text-align: center;
 }
-#projetos div{
-    display: flex;
-    align-content: start;
-    align-items: center;
-    height: 60vh;
+#container-cards{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     justify-content: space-around;
-    background-color: #00FFB3;
+    gap: 20px;
+    border: none;
     
 }
-#projetos div:hover{
-    rotate: -1deg;
-    background-color: #A8AAB3;
-    transition: 0.5s;
+.card-project{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    border-radius: 15px; 
+    background-color:#BB86FC;
+    
 }
+.card-project > img{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 0px 0px;
+}
+.description-project{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.description-project > span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.description-project > p{
+    font-weight: 500;
+}
+.nav-button{
+    display: flex;
+    justify-content:center;
+    padding: 5px;
+}
+.nav-button > button{
+    margin: 5px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    margin-right: 50px;
+}
+.nav-button > button > a{
+    color: black;
+}
+
 /* CONTATO */
 #contato{
     width: 100%;
